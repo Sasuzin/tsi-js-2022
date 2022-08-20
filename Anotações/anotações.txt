@@ -1,4 +1,4 @@
- -------------- Para criar uma chave pelo git --------------
+-------------- Para criar uma chave pelo git --------------
 
     Comando 1: ssh-keygen.
     Depois só dar enter e prestar bastante atenção, pois ele vai
@@ -22,4 +22,6 @@
 
      ls -lah (para saber repositorios ocultos.)
      pwd (para saber o repositorio que estou.)
-     rm -rf + o nome do repositorio (Para apagar um repositorio na sua maquina.)
+     
+     rm -rf + o nome do repositorio (Para apagar um repositorio na sua maquina.) 
+
