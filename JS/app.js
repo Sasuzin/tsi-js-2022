@@ -1,0 +1,1 @@
+console.log('Console do app js');
