@@ -1,20 +1,29 @@
-let amigos = ["Luis", "Milena", "Pepe", "Pedro", "Gustavo", "João","Maria", "Marcos", "Theo", "Tom"];
+//vetor
+let amigos = [  'Luis', 
+                'Paulo', 
+                'Amanda', 
+                'Laura', 
+                'João'];
 
-//Looping com o amigos.
-for ( i = 0; i < amigos.length; i++ ) {
+console.log(amigos.length);
 
-    console.log(`Amigos: ${i}`); // <- Template String
+//Looping com o vetor
+for(let i = 0 ; i < amigos.length ; i++){
+
+    // Template string (interpolação)
+    console.log(`Amigo: ${amigos[i]}`);
 }
 
-// Foreach For = para , each = cada
-amigos.forEach(function(valor, indice) {
+//Foreach For = para each = cada
+amigos.forEach(function( valor, indice){
 
     console.log(`${indice}: ${valor}`);
 });
 
-//Igual o Foreach
-amigos.map(function(val){
+//Map
+amigos.map(function(valor, indice){
 
-    console.log(val);
+    console.log(`${indice}: ${valor}`);
 });
+
 
