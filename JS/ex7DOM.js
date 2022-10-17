@@ -1,7 +1,18 @@
 //Como apagar elementos
+/*
+const itens = document.querySelectorAll('li');
 
-const itens = document.querySelector('li');
-const lista = document.querySelector('ul');
+console.log(itens);
 
-//Escolhe e remove o item
-itens[0].remove();
+itens[1].remove();
+itens[2].remove();
+*/
+
+//Outra forma de remover
+const item = document.querySelector('ul');
+
+console.log(item.firstElementChild.firstElementChild);
+
+//item.remove();
+
+item.firstElementChild.firstElementChild.remove();
