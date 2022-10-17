@@ -25,4 +25,37 @@ document.querySelector('#mostrar').innerText =
 
 //E para apagar no session storage?
 //removeItem()
-//sessionStorage.removeItem('dadoDoUsuario'); 
+//sessionStorage.removeItem('dadoDoUsuario');   
+
+let vetor = ['pera','banana','manga'];
+
+//Para gardar algo que não seja uma string
+//no localStorage ou sessionStorage, temos
+//que converter para string. Com o método
+//JSON.stringify() transformamos vetores
+//e objetos em string
+sessionStorage.setItem( 'frutas', 
+                        JSON.stringify(vetor));
+
+//Para recuperar uma string JSON do localStorage
+//ou sessionStorage e transformar em um objeto
+//ou vetor novamente, use JSON.parse()
+let recupDado = JSON.parse(
+                    sessionStorage.
+                        getItem('frutas'));
+
+//Alterações no vetor recuperado 
+//do sessionStorage
+recupDado[3] = 'morango';
+recupDado[1] = 'parchita';
+
+//console.log(recupDado);
+
+//Transforma o vetor em string para poder
+//gravar em sessionStorage ou localStorage
+let strRecupDados = JSON.stringify(recupDado);
+
+//console.log(strRecupDados);
+
+//Atualiza o item frutas no sessionStorage
+sessionStorage.setItem('frutas', strRecupDados );
